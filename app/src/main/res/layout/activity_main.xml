@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.benjaminkiene.smartbookmarkskiene.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/tvNbComBkyLivre"
+            android:layout_width="199dp"
+            android:layout_height="41dp"
+            android:text="Nombre moyen de commentaires par livre :"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="235dp"
+            android:layout_below="@+id/txtNbCom"
+            android:layout_alignLeft="@+id/txtNbCom"
+            android:layout_alignStart="@+id/txtNbCom"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtNbCom"
+            android:layout_width="199dp"
+            android:layout_height="41dp"
+            android:text="Nombre de commentaires :"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="194dp"
+            android:layout_below="@+id/txtNbLivres"
+            android:layout_alignLeft="@+id/txtNbLivres"
+            android:layout_alignStart="@+id/txtNbLivres"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtNbLivres"
+            android:layout_width="158dp"
+            android:layout_height="33dp"
+            android:text="Nombre de livres :"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="151dp"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/btnCom"
+            android:layout_alignRight="@+id/btnLivres"
+            android:layout_alignEnd="@+id/btnLivres" />
+
+        <Button
+            android:id="@+id/btnCom"
+            android:layout_width="352dp"
+            android:layout_height="56dp"
+            android:text="Ajouter commentaire"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="73dp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/btnNotes"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnNotes"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:text="Les notes"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnLivres"
+            android:layout_toEndOf="@+id/btnLivres"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+
+        <Button
+            android:id="@+id/btnLivres"
+            android:layout_width="169dp"
+            android:layout_height="48dp"
+            android:text="Les livres"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
